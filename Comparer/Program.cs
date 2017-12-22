@@ -31,14 +31,11 @@ namespace Comparer
             var data3 = file2.Where((x, i) => x != file1[i]);
          
             var difference = data3.Average(x=>x);
-            if (difference <= 24)
-            {
-                Console.WriteLine("Benzer");
-            }
-            else
-            {
-                Console.WriteLine("Alakasız");
-            }
+            if (difference <= 24)            
+                Console.WriteLine("Good Match");
+            else            
+                Console.WriteLine("Bad Match");
+            
 
 
             
